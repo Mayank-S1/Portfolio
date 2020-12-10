@@ -52,7 +52,7 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
-      <a class="nav-item nav-link active" href="https://www.linkedin.com/feed/">LINKDIN</a>
+      <a class="nav-item nav-link active" href="https://www.linkedin.com/in/mayank-sengar/">LINKDIN</a>
       <a class="nav-item nav-link" href="{% static 'mayank resume.pdf' %}">RESUME</a>
       <a class="nav-item nav-link" href="{% url 'allblogs' %}">BLOG</a>
     </div>
@@ -64,21 +64,29 @@
 
   <section class="jumbotron text-center">
     <div class="container">
-      <h1>Hi,I am Mayank</h1>
-      <p class="lead text-muted">Hyy my name is Mayank Sengar and I love to see F.R.I.E.N.D.S.<p>
-        <a href="mailto:mayanksengar198@gmail.com" class="btn btn-primary my-2">Email me</a>
-
-      </p>
+      <h1>Hi,I am Mayank</h1><br>
       <img src="{% static 'IMG-20200119-WA0004.jpg' %}" width="400" height="500"/>
     </div>
   </section>
 
   <div class="album py-5 bg-light">
     <div class="container">
+    <h2>About Me</h2><br>
+      <div class="row">
+      <p><h5>I am currently persuing B.Tech in Electronics and Communications Enginerring From Motilal Nehru National Institute Of Technology,Prayagraj.
+      I am from Jhansi,Uttar Pradesh.</h5></p>
 
+      </div>
+    </div>
+  </div>
+
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+    <h2>My projects</h2><br>
       <div class="row">
 
-          {% for job in jobs.all%}
+        {% for job in jobs.all%}
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
             <img class="card-img-top" src="{{ job.image.url }}" width="500" height="300">

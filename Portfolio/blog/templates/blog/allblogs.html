@@ -53,7 +53,7 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
       <a class="nav-item nav-link " href="https://www.linkedin.com/feed/">LINKDIN</a>
-      <a class="nav-item nav-link" href="{% static 'mayank resume.pdf' %}">RESUME</a>
+      <a class="nav-item nav-link" href="{% static 'RESUME_MayankSengar.pdf' %}">RESUME</a>
       <a class="nav-item nav-link active" href="{% url 'allblogs' %}">BLOG</a>
     </div>
   </div>
@@ -87,8 +87,8 @@ h1{
         <div class="col-md-4">
 
            <div class="card mb-4 shadow-sm">
-               <a href="{% url 'detail' blog.id %}"><h3>{{ blog.title }}<h3/>></a>
-            <p class="card-text">{{ blog.pub_date }}</p>
+               <h3>{{ blog.title }}<h3/>
+            <p class="card-text">
              <img class="card-img-top" src="{{ blog.image.url }}">
               <div class="card-body">
               <p class="card-text">{{ blog.body }}</p>
